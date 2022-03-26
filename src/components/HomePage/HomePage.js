@@ -6,7 +6,6 @@ import './HomePage.css'
 const HomePage = () => {
     const [items, setItems] = useState([]); /* to show products/items on UI */
     const [cart, setCart] = useState([]); /* for cart item display on UI */
-    console.log(cart);
     const [randomItems, setRandomItems] = useState([]); /* for random item choose */
     useEffect(() => {
         fetch('products.json')
@@ -24,7 +23,7 @@ const HomePage = () => {
             /* now try here to print a message for warning */
         }
     };
-    const againBtnHandler = () => {
+    const againBtnHandler = () => { /* to clear cart for another trial */
         setCart([]);
     };
     const chooseBtnHandler = () => {

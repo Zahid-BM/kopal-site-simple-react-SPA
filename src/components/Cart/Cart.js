@@ -2,14 +2,6 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = ({ cartState, againBtnHandler, chooseBtnHandler }) => {
-    // console.log(cartState);
-    // let item = [];
-    // for (const addedItem of cartState) {
-    // const newItem = [...item, addedItem.name];
-    // item = newItem;
-
-
-
     return (
         <div className='sticky-top'>
             <h3 className='mb-5 mt-3'>Selected items</h3>
