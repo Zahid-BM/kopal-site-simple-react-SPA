@@ -26,8 +26,11 @@ const HomePage = () => {
         setCart([]);
     };
     const chooseBtnHandler = () => {
-        const random = cart[Math.floor(Math.random() * cart.length)].name; /* generate random item name */
+        const random = cart[Math.floor(Math.random() * cart.length)]?.name ?? 'No item in the cart'; /* generate random item name */
         alert(random);
+
+
+
     };
     return (
 
@@ -48,8 +51,8 @@ const HomePage = () => {
 
                     <Cart cartState={cart} againBtnHandler={againBtnHandler} chooseBtnHandler={chooseBtnHandler}></Cart>
                 </div>
-                
-        </div>
+
+            </div>
         </div>
 
 
