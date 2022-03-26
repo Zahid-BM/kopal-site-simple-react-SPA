@@ -6,6 +6,7 @@ import './HomePage.css'
 const HomePage = () => {
     const [items, setItems] = useState([]);
     const [cart, setCart] = useState([]);
+    const [randomItems, setRandomItems] = useState(0);
     console.log(cart);
     useEffect(() => {
         fetch('products.json')
