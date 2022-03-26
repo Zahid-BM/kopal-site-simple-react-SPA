@@ -1,10 +1,15 @@
 .home-page{
     display: grid;
     grid-template-columns: 5fr 1fr;
+    margin-left: 30px;
+    margin-top: 30px;
 
 }
 .product-container{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     gap: 4%;
+}
+.cart-container{
+    box-shadow: 2px 4px 10px darkgray;
 }
