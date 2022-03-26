@@ -6,7 +6,7 @@ import './HomePage.css'
 const HomePage = () => {
     const [items, setItems] = useState([]);
     const [cart, setCart] = useState([]);
-    console.log(items);
+    console.log(cart);
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -33,6 +33,7 @@ const HomePage = () => {
             <div className="cart-container">
                 <h3 className='mb-5 mt-3'>Selected items</h3>
                 <Cart cartState={cart} againBtnHandler={againBtnHandler} ></Cart>
+                
             </div>
         </div>
     );
