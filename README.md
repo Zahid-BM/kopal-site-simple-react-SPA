@@ -1,3 +1,5 @@
-# Assignment no-08 simple react SPA 
+# Website name : kopal-in-spa-react
 
-Live site link is  here [kopal-site](https://github.com/facebook/create-react-app).
+# #Assignment no-08, simple react SPA
+
+Live site link is here [kopal-site](https://github.com/facebook/create-react-app).
