@@ -1,3 +1,3 @@
 # Website name : KOPAL-in-SPA-react
 
-Live site link is here [netlify link](https://github.com/facebook/create-react-app).
+Live site link is here [netlify link](https://assignment-8-react-simple-spa.netlify.app/).
