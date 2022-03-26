@@ -5,7 +5,7 @@ import './HomePage.css'
 
 const HomePage = () => {
     const [items, setItems] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
     console.log(items);
     useEffect(() => {
         fetch('products.json')
@@ -13,7 +13,8 @@ const HomePage = () => {
             .then(data => setItems(data.slice(0, 12)))
     }, []);
     const addBtnHandler = item => {
-        console.log(item);
+        const newcart = [...cart, item];
+        setCart(newcart);
     }
     return (
 
@@ -28,7 +29,7 @@ const HomePage = () => {
 
             <div className="cart-container">
                 <h3>Selected items</h3>
-                <Cart></Cart>
+                <Cart cartState = {cart}></Cart>
             </div>
         </div>
     );
