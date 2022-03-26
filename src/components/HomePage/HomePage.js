@@ -4,10 +4,11 @@ import Product from '../Product/Product';
 import './HomePage.css'
 
 const HomePage = () => {
-    const [items, setItems] = useState([]);
-    const [cart, setCart] = useState([]);
-    const [randomItems, setRandomItems] = useState(0);
+    const [items, setItems] = useState([]); /* to show products/items on UI */
+    const [cart, setCart] = useState([]); /* for cart item display on UI */
     console.log(cart);
+    const [randomItems, setRandomItems] = useState([]); /* for random item choose */
+    // console.log(randomItems);
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -20,9 +21,10 @@ const HomePage = () => {
     const againBtnHandler = () => {
         setCart([]);
     };
-    const chooseBtnHandler = (cart) => {
-        console.log(cart);
-    }
+    const chooseBtnHandler = () => {
+        const random = cart[Math.floor(Math.random() * cart.length)].name;
+        console.log(random); 
+    };
     return (
 
         <div className='home-page'>
