@@ -6,7 +6,6 @@ import './HomePage.css'
 const HomePage = () => {
     const [items, setItems] = useState([]); /* to show products/items on UI */
     const [cart, setCart] = useState([]); /* for cart item display on UI */
-    const [randomItems, setRandomItems] = useState([]); /* for random item choose */
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -20,15 +19,16 @@ const HomePage = () => {
         }
         else {
             setCart(cart)
-            /* now try here to print a message for warning */
+            /* now try here to print a message for warning if time available*/
         }
+
     };
     const againBtnHandler = () => { /* to clear cart for another trial */
         setCart([]);
     };
     const chooseBtnHandler = () => {
         const random = cart[Math.floor(Math.random() * cart.length)].name; /* generate random item name */
-        console.log(random);
+        alert(random);
     };
     return (
 
@@ -44,7 +44,6 @@ const HomePage = () => {
             <div className="cart-container">
 
                 <Cart cartState={cart} againBtnHandler={againBtnHandler} chooseBtnHandler={chooseBtnHandler}></Cart>
-
             </div>
         </div>
     );

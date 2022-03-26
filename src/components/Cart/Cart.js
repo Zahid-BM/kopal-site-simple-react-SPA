@@ -2,6 +2,7 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = ({ cartState, againBtnHandler, chooseBtnHandler }) => {
+
     return (
         <div className='sticky-top'>
             <h3 className='mb-5 mt-3'>Selected items</h3>
