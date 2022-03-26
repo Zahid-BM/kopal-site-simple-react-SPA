@@ -20,20 +20,7 @@ const Answer = () => {
                             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div className="accordion-body bg-secondary text-white">
-                                    <p> Basically JavaScript is a single threaded interpreted programming language. It
-                                        has only a single call stack. That means it is not like other compiled language
-                                        that we need to write a full a-z code to execute. JavaScript indeed can process
-                                        and run small small code command and for this JavaScript implicitly interprets
-                                        the small code commands to run using just in time (JIT) compiler process. It
-                                        uses google's V8 engine to execute the codes in chrome and node.js. From 2015
-                                        JavaScript V8 engine using Turbo Fan technology to process the code even more
-                                        faster than ever. In short, JavaScript runs the written codes in 4 steps. 1.
-                                        Checks any syntactic errors or not in the written codes. 2. If no syntax error
-                                        then it creates a special data structure called Abstract Syntax tree. 3. Then
-                                        JavaScript converts the codes into machine readable codes via JIT process called
-                                        byte codes. 4. Then finally runs the byte codes in system or engine . Most
-                                        importantly notable that JavaScript has a run time model to execute the codes
-                                        named event loop.</p>
+                                    <p> React is the most famous JavaScript library/framework for it’s faster and smoother web applications experiences. React brings this revolutionary faster and smoother user-experience indeed with it’s special work process. React uses diff algorithm where basically react saves a soft copy of browser’s DOM and when it runs the code then easily it compares with the saved soft copy of the DOM and compile the codes exactly where requires. This soft copy of browser’s DOM is known as a Virtual DOM. Another thing to note, when we write code in react JSX then react uses babel transpiler to compile codes into react format.Alongside, react uses fiber architecture too. React's hooks are another fantastic thing that gives user experience at the boss level. </p>
                                 </div>
                             </div>
                         </div>
@@ -48,18 +35,7 @@ const Answer = () => {
                             <div id="collapseOne1" className="accordion-collapse collapse show"
                                 aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
                                 <div className="accordion-body bg-secondary text-white">
-                                    <p> Local and session storage are almost same but this is identical. When browser
-                                        uses storage for a session only then it is called a session storage and when
-                                        browser uses the storage to store data for a certain period of time or longer
-                                        time then it is called a local storage. Session storage data is vanished
-                                        immediately after ending the session but local storage data doesn't vanish even
-                                        after ending the session. Local storage data stays as long as that is not erased
-                                        by user. Saving user’s address is a good instance for a local storage data. As
-                                        long as this saved in the local storage user doesn’t need to re-type the address
-                                        each time. On the other hand, opening a new page in the new tab of a web browser
-                                        is a good example for session storage. Importantly notable that local and
-                                        session storage data can not be sent to the server but coockies data can be sent
-                                        to server even as coockies data saved in the local storage.</p>
+                                    <p> The most notable differences between props and state is that props is  read only  and that means props value can not be changed. It’s immutable. On the other hand, state can be modified. Another thing is props is used to pass data from one component to other as arguments but state holds the data of the components. Props can easily accessed by child component but state data can’t be accessed by it’s child. Props receives data as object and state can hold all types of data. We can do destructering with props data but state doesn’t require this type of destructuring. But important is to note that props and state both are regarded as object in reactjs and both can hold default values too.</p>
                                 </div>
                             </div>
                         </div>
