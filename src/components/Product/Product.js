@@ -10,8 +10,8 @@ const Product = ({ productItems, addBtnHandler }) => {
                 <img src={img} className="card-img-top rounded" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Price : $ {price}</h6>
-                    <button onClick={() => addBtnHandler(productItems)} class="btn btn-primary w-100" type="button">Add to Cart <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></button>
+                    <h6 className="card-subtitle mb-2 text-muted">Price : $ {price}</h6>
+                    <button onClick={() => addBtnHandler(productItems)} className="btn btn-primary w-100" type="button">Add to Cart <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></button>
                 </div>
             </div>
         </div>

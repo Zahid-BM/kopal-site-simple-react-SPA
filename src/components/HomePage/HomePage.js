@@ -18,6 +18,9 @@ const HomePage = () => {
     };
     const againBtnHandler = () => {
         setCart([]);
+    };
+    const chooseBtnHandler = (cart) => {
+        console.log(cart);
     }
     return (
 
@@ -31,9 +34,9 @@ const HomePage = () => {
             </div>
 
             <div className="cart-container">
-                <h3 className='mb-5 mt-3'>Selected items</h3>
-                <Cart cartState={cart} againBtnHandler={againBtnHandler} ></Cart>
-                
+
+                <Cart cartState={cart} againBtnHandler={againBtnHandler} chooseBtnHandler={chooseBtnHandler}></Cart>
+
             </div>
         </div>
     );
