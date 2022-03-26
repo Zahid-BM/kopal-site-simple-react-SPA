@@ -3,7 +3,8 @@ import React from 'react';
 const Cart = ({ cartState }) => {
     let item = [];
     for (const addedItem of cartState) {
-        item = [addedItem.name];
+        const newItem = [...item, addedItem.name];
+        item = newItem;
     }
     return (
         <div>
