@@ -4,7 +4,7 @@ import './Cart.css'
 const Cart = ({ cartState, againBtnHandler, chooseBtnHandler }) => {
 
     return (
-        <div className='sticky-top'>
+        <div className='sticky-top full-cart'>
             <h3 className='mb-5 mt-3'>Selected items</h3>
             {
                 cartState.map(addedItem => <p key={addedItem.id}> <img className='cart-img' src={addedItem.img} alt="" /> {addedItem.name}</p>)

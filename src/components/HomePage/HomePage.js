@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
-// import './HomePage.css';
 
 const HomePage = () => {
     const [items, setItems] = useState([]); /* to show products/items on UI */
@@ -32,7 +31,7 @@ const HomePage = () => {
     };
     return (
 
-        <div className='home-page container'>
+        <div className='home-page container mb-5'>
 
 
             <div className='row'>
