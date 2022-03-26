@@ -2,9 +2,9 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
+       
 
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
                 <div className="container-fluid">
                     <a className="navbar-brand fw-bolder fs-2" href="#/">KOPAL Site</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -30,7 +30,7 @@ const Header = () => {
                 </div>
             </nav>
 
-        </div>
+      
     );
 };
 

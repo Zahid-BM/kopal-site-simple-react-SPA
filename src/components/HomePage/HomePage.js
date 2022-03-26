@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
-import './HomePage.css'
+// import './HomePage.css';
 
 const HomePage = () => {
     const [items, setItems] = useState([]); /* to show products/items on UI */
@@ -32,20 +32,29 @@ const HomePage = () => {
     };
     return (
 
-        <div className='home-page'>
+        <div className='home-page container'>
 
-            <div className="product-container">
 
-                {
-                    items.map(item => <Product key={item.id} productItems={item} addBtnHandler={addBtnHandler}></Product>)
-                }
-            </div>
+            <div className='row'>
+                <div className='col-9'>
+                    <div className="product-container">
+                        <div className='row row-cols-3 g-4 '>
+                            {
+                                items.map(item => <Product key={item.id} productItems={item} addBtnHandler={addBtnHandler}></Product>)
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div className="cart-container col-3">
 
-            <div className="cart-container">
-
-                <Cart cartState={cart} againBtnHandler={againBtnHandler} chooseBtnHandler={chooseBtnHandler}></Cart>
-            </div>
+                    <Cart cartState={cart} againBtnHandler={againBtnHandler} chooseBtnHandler={chooseBtnHandler}></Cart>
+                </div>
+                
         </div>
+        </div>
+
+
+
     );
 };
 
