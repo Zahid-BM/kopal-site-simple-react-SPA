@@ -8,7 +8,6 @@ const HomePage = () => {
     const [cart, setCart] = useState([]); /* for cart item display on UI */
     console.log(cart);
     const [randomItems, setRandomItems] = useState([]); /* for random item choose */
-    // console.log(randomItems);
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -16,14 +15,21 @@ const HomePage = () => {
     }, []);
     const addBtnHandler = item => {
         const newcart = [...cart, item];
-        setCart(newcart);
+        /* set up to 4 items can be added */
+        if (newcart.length <= 4) {
+            setCart(newcart)
+        }
+        else {
+            setCart(cart)
+            /* now try here to print a message for warning */
+        }
     };
     const againBtnHandler = () => {
         setCart([]);
     };
     const chooseBtnHandler = () => {
-        const random = cart[Math.floor(Math.random() * cart.length)].name;
-        console.log(random); 
+        const random = cart[Math.floor(Math.random() * cart.length)].name; /* generate random item name */
+        console.log(random);
     };
     return (
 
